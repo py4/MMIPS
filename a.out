@@ -1,0 +1,93 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x19b11b0 .scope module, "Stack" "Stack" 2 2;
+ .timescale -9 -9;
+v0x19d2e40_0 .net "clk", 0 0, C4<z>; 0 drivers
+v0x19e4910 .array "data", 0 7, 11 0;
+v0x19e4990_0 .var/i "i", 31 0;
+v0x19e4a30_0 .var "out_data", 11 0;
+v0x19e4ae0_0 .net "pop_sig", 0 0, C4<z>; 0 drivers
+v0x19e4b80_0 .net "push_data", 11 0, C4<zzzzzzzzzzzz>; 0 drivers
+v0x19e4c60_0 .net "push_sig", 0 0, C4<z>; 0 drivers
+v0x19e4d00_0 .var "stack_pointer", 3 0;
+v0x19e4df0_0 .net "tos_sig", 0 0, C4<z>; 0 drivers
+E_0x19b05b0/0 .event edge, v0x19e4b80_0, v0x19e4ae0_0, v0x19e4df0_0, v0x19e4c60_0;
+E_0x19b05b0/1 .event posedge, v0x19d2e40_0;
+E_0x19b05b0 .event/or E_0x19b05b0/0, E_0x19b05b0/1;
+E_0x19b12d0 .event edge, v0x19e4df0_0;
+S_0x19b1300 .scope begin, "loop2" "loop2" 2 23, 2 23, S_0x19b11b0;
+ .timescale -9 -9;
+    .scope S_0x19b11b0;
+T_0 ;
+    %set/v v0x19e4d00_0, 0, 4;
+    %end;
+    .thread T_0;
+    .scope S_0x19b11b0;
+T_1 ;
+    %wait E_0x19b12d0;
+    %load/v 20, v0x19e4d00_0, 4;
+    %movi 24, 0, 28;
+    %subi 20, 1, 32;
+    %ix/get 3, 20, 32;
+    %load/av 8, v0x19e4910, 12;
+    %set/v v0x19e4a30_0, 8, 12;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x19b11b0;
+T_2 ;
+    %wait E_0x19b05b0;
+    %load/v 8, v0x19e4c60_0, 1;
+    %jmp/0xz  T_2.0, 8;
+    %load/v 8, v0x19e4b80_0, 12;
+    %ix/getv 3, v0x19e4d00_0;
+    %jmp/1 t_0, 4;
+    %ix/load 0, 12, 0; word width
+    %ix/load 1, 0, 0; part off
+    %assign/av v0x19e4910, 0, 8;
+t_0 ;
+    %load/v 8, v0x19e4d00_0, 4;
+    %mov 12, 0, 28;
+    %addi 8, 1, 32;
+    %ix/load 0, 4, 0;
+    %assign/v0 v0x19e4d00_0, 0, 8;
+T_2.0 ;
+    %load/v 8, v0x19e4ae0_0, 1;
+    %jmp/0xz  T_2.2, 8;
+    %load/v 8, v0x19e4d00_0, 4;
+    %mov 12, 0, 28;
+    %subi 8, 1, 32;
+    %set/v v0x19e4d00_0, 8, 4;
+T_2.2 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x19b11b0;
+T_3 ;
+    %set/v v0x19e4990_0, 0, 32;
+T_3.0 ;
+    %load/v 8, v0x19e4990_0, 32;
+   %cmpi/s 8, 8, 32;
+    %jmp/0xz T_3.1, 5;
+    %fork t_2, S_0x19b1300;
+    %jmp t_1;
+    .scope S_0x19b1300;
+t_2 ;
+    %vpi_call 2 24 "$dumpvars", 1'sb0, &A<v0x19e4910, v0x19e4990_0 >;
+    %end;
+    .scope S_0x19b11b0;
+t_1 %join;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 8, v0x19e4990_0, 32;
+    %set/v v0x19e4990_0, 8, 32;
+    %jmp T_3.0;
+T_3.1 ;
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "stack.v";
