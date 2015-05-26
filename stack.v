@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module Stack(input push_sig, pop_sig, tos_sig, clk, input[11:0] push_data ,output reg [11:0] out_data);
+module Stack(input push_sig, pop_sig, tos_sig, clk, input[7:0] push_data ,output reg [7:0] out_data);
   
   reg[11:0] data[7:0];
   reg[3:0] stack_pointer = 4'b0;

@@ -1,0 +1,740 @@
+$date
+	Tue May 26 17:56:58 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 ! \data[0] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 " \data[1] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 # \data[2] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 $ \data[3] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 % \data[4] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 & \data[5] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 ' \data[6] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 ( \data[7] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 ) \data[8] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 * \data[9] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 + \data[10] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 , \data[11] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 - \data[12] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 . \data[13] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 / \data[14] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 0 \data[15] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 1 \data[16] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 2 \data[17] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 3 \data[18] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module data_memory $end
+$var reg 8 4 \data[19] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 5 \data[0] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 6 \data[1] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 7 \data[2] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 8 \data[3] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 9 \data[4] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 : \data[5] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 ; \data[6] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 12 < \data[7] [11:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$var reg 1 = clk $end
+$scope module cpu $end
+$var wire 2 > alu_op [1:0] $end
+$var wire 1 ? clk $end
+$var wire 8 @ inst [7:0] $end
+$var wire 1 A ld_B $end
+$var wire 1 B ld_pc $end
+$var wire 1 C mem_adr_src $end
+$var wire 1 D mem_write_sig $end
+$var wire 1 E pc_src $end
+$var wire 1 F pop_sig $end
+$var wire 1 G push_sig $end
+$var wire 1 H stack_src $end
+$var wire 1 I tos_sig $end
+$var wire 1 J z $end
+$scope module data_path $end
+$var wire 2 K alu_op [1:0] $end
+$var wire 8 L alu_out [7:0] $end
+$var wire 1 ? clk $end
+$var wire 8 M data_memory_out [7:0] $end
+$var wire 1 A ld_B $end
+$var wire 1 B ld_pc $end
+$var wire 1 D mem_write_sig $end
+$var wire 1 E pc_src $end
+$var wire 1 F pop_sig $end
+$var wire 1 G push_sig $end
+$var wire 8 N stack_out [7:0] $end
+$var wire 1 H stack_src $end
+$var wire 1 I tos_sig $end
+$var reg 8 O B_reg [7:0] $end
+$var reg 8 P alu_out_reg [7:0] $end
+$var reg 8 Q instruction [7:0] $end
+$var reg 8 R mdr [7:0] $end
+$var reg 5 S pc [4:0] $end
+$var reg 1 T z $end
+$scope module data_memory $end
+$var wire 5 U address [4:0] $end
+$var wire 1 ? clk $end
+$var wire 1 D mem_write_sig $end
+$var wire 8 V write_data [7:0] $end
+$var integer 32 W i [31:0] $end
+$var reg 8 X read_data [7:0] $end
+$scope begin loop $end
+$upscope $end
+$upscope $end
+$scope module stack $end
+$var wire 1 ? clk $end
+$var wire 1 F pop_sig $end
+$var wire 8 Y push_data [7:0] $end
+$var wire 1 G push_sig $end
+$var wire 1 I tos_sig $end
+$var integer 32 Z i [31:0] $end
+$var reg 8 [ out_data [7:0] $end
+$var reg 4 \ stack_pointer [3:0] $end
+$scope begin loop2 $end
+$upscope $end
+$upscope $end
+$scope module alu $end
+$var wire 8 ] A [7:0] $end
+$var wire 8 ^ B [7:0] $end
+$var wire 2 _ alu_op [1:0] $end
+$var reg 8 ` R [7:0] $end
+$upscope $end
+$upscope $end
+$scope module controller $end
+$var wire 1 ? clk $end
+$var wire 8 a inst [7:0] $end
+$var wire 1 J zero $end
+$var reg 2 b alu_op [1:0] $end
+$var reg 1 c ld_B $end
+$var reg 1 d ld_pc $end
+$var reg 1 e mem_adr_src $end
+$var reg 1 f mem_write $end
+$var reg 4 g ns [3:0] $end
+$var reg 1 h pc_src $end
+$var reg 4 i ps [3:0] $end
+$var reg 1 j stack_pop $end
+$var reg 1 k stack_push $end
+$var reg 1 l stack_src $end
+$var reg 1 m tos $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0m
+0l
+0k
+0j
+b0 i
+0h
+b1 g
+0f
+1e
+1d
+0c
+b0 b
+b10001111 a
+bx `
+b0 _
+bx ^
+bx ]
+b0 \
+bx [
+b1000 Z
+b10001111 Y
+b10001111 X
+b10100 W
+bx V
+b0 U
+xT
+b0 S
+b10001111 R
+b10001111 Q
+bx P
+bx O
+bx N
+b10001111 M
+bx L
+b0 K
+xJ
+0I
+0H
+0G
+0F
+0E
+0D
+1C
+1B
+0A
+b10001111 @
+1?
+b0 >
+1=
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+b11111111 &
+b0 %
+b0 $
+b10010001 #
+b10010000 "
+b10001111 !
+$end
+#20
+0=
+0?
+#40
+b101 g
+0e
+0C
+0d
+0B
+b10010000 X
+b10010000 M
+b1 i
+b1 S
+b1 U
+1=
+1?
+#60
+0=
+0?
+#80
+b110 g
+b10010000 Y
+b10010000 Q
+b10010000 @
+b10010000 a
+b10010000 R
+b101 i
+1=
+1?
+#100
+0=
+0?
+#120
+b1 \
+b0xxxxxxxx 5
+bx Y
+1l
+1H
+1k
+1G
+b0 g
+b110 i
+1=
+1?
+#140
+0=
+0?
+#160
+b10010000 Y
+1d
+1B
+1e
+1C
+b1 g
+0k
+0G
+0l
+0H
+b0 i
+b10 \
+b0xxxxxxxx 6
+1=
+1?
+#180
+0=
+0?
+#200
+b101 g
+0e
+0C
+0d
+0B
+b10010001 X
+b10010001 M
+b1 i
+b10 S
+b10 U
+1=
+1?
+#220
+0=
+0?
+#240
+b110 g
+b10010001 Y
+b10010001 Q
+b10010001 @
+b10010001 a
+b10010001 R
+b101 i
+1=
+1?
+#260
+0=
+0?
+#280
+b11 \
+b0xxxxxxxx 7
+bx Y
+1l
+1H
+1k
+1G
+b0 g
+b110 i
+1=
+1?
+#300
+0=
+0?
+#320
+b10010001 Y
+1d
+1B
+1e
+1C
+b1 g
+0k
+0G
+0l
+0H
+b0 i
+b100 \
+b0xxxxxxxx 8
+1=
+1?
+#340
+0=
+0?
+#360
+b101 g
+0e
+0C
+0d
+0B
+b0 X
+b0 M
+b1 i
+b11 S
+b11 U
+1=
+1?
+#380
+0=
+0?
+#400
+b110 g
+b0 Y
+b0 Q
+b0 @
+b0 a
+b0 R
+b101 i
+1=
+1?
+#420
+0=
+0?
+#440
+b101 \
+b0xxxxxxxx 9
+bx Y
+1l
+1H
+1k
+1G
+b0 g
+b110 i
+1=
+1?
+#460
+0=
+0?
+#480
+b0 Y
+1d
+1B
+1e
+1C
+b1 g
+0k
+0G
+0l
+0H
+b0 i
+b110 \
+b0xxxxxxxx :
+1=
+1?
+#500
+0=
+0?
+#520
+b10 g
+0e
+0C
+0d
+0B
+b1 i
+b100 S
+b100 U
+1=
+1?
+#540
+0=
+0?
+#560
+b101 \
+1c
+1A
+1j
+1F
+1m
+1I
+b11 g
+b10 i
+1=
+1?
+#580
+0=
+0?
+#600
+b100 g
+0c
+0A
+1j
+1F
+1m
+1I
+b11 i
+b11 \
+1=
+1?
+#620
+0=
+0?
+#640
+b0xxxxxxxx 7
+bx Y
+1k
+1G
+1l
+1H
+b0 g
+0j
+0F
+0m
+0I
+b100 i
+b11 \
+1=
+1?
+#660
+0=
+0?
+#680
+b0 Y
+1d
+1B
+1e
+1C
+b1 g
+0k
+0G
+0l
+0H
+b0 i
+b100 \
+b0xxxxxxxx 8
+1=
+1?
+#700
+0=
+0?
+#720
+b10 g
+0e
+0C
+0d
+0B
+b11111111 X
+b11111111 M
+b101 S
+b101 U
+b1 i
+1=
+1?
+#740
+0=
+0?
+#760
+b11 \
+1c
+1A
+1j
+1F
+1m
+1I
+b11 g
+b11111111 Y
+b10 i
+b11111111 Q
+b11111111 @
+b11111111 a
+b11111111 R
+1=
+1?
+#780
+0=
+0?
+#800
+b10 \
+1=
+1?
