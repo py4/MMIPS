@@ -1,11 +1,11 @@
 `timescale 1ns/1ns
 
 module CPUTest;
-  reg clk = 1;
+  reg clk = 0;
 
   CPU cpu(clk);
   initial begin
-    clk = 1;
+    clk = 0;
   end
   always begin
     #20 clk = ~clk;

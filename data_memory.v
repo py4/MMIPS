@@ -4,15 +4,18 @@ module DataMemory(input[4:0] address, input[7:0] write_data, input mem_write_sig
   reg[7:0] data[31:0];
 
   initial begin
-    //data[15] = 8'b10101010;
-    //data[16] = 8'b00000001;
-    //data[17] = 8'b00000010;
+    data[15] = 8'b10101010;
+    data[16] = 8'b00000001;
+    data[17] = 8'b00000010;
     $readmemb("instructions.mips", data);
   end
 
   always @(posedge clk) begin
-    if(mem_write_sig & clk)
+    if(mem_write_sig) begin
+      $display("FUCK!");
+      $display("%b",write_data);
       data[address] <= write_data;
+    end
   end
 
   always @(address) begin

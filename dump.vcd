@@ -1,5 +1,5 @@
 $date
-	Tue May 26 17:56:58 2015
+	Thu May 28 21:23:38 2015
 $end
 $version
 	Icarus Verilog
@@ -191,7 +191,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 5 \data[0] [11:0] $end
+$var reg 8 5 \data[0] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -200,7 +200,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 6 \data[1] [11:0] $end
+$var reg 8 6 \data[1] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -209,7 +209,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 7 \data[2] [11:0] $end
+$var reg 8 7 \data[2] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -218,7 +218,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 8 \data[3] [11:0] $end
+$var reg 8 8 \data[3] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -227,7 +227,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 9 \data[4] [11:0] $end
+$var reg 8 9 \data[4] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -236,7 +236,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 : \data[5] [11:0] $end
+$var reg 8 : \data[5] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -245,7 +245,7 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 ; \data[6] [11:0] $end
+$var reg 8 ; \data[6] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -254,147 +254,198 @@ $scope module CPUTest $end
 $scope module cpu $end
 $scope module data_path $end
 $scope module stack $end
-$var reg 12 < \data[7] [11:0] $end
+$var reg 8 < \data[7] [7:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module CPUTest $end
-$var reg 1 = clk $end
 $scope module cpu $end
-$var wire 2 > alu_op [1:0] $end
-$var wire 1 ? clk $end
-$var wire 8 @ inst [7:0] $end
-$var wire 1 A ld_B $end
-$var wire 1 B ld_pc $end
-$var wire 1 C mem_adr_src $end
-$var wire 1 D mem_write_sig $end
-$var wire 1 E pc_src $end
-$var wire 1 F pop_sig $end
-$var wire 1 G push_sig $end
-$var wire 1 H stack_src $end
-$var wire 1 I tos_sig $end
-$var wire 1 J z $end
 $scope module data_path $end
-$var wire 2 K alu_op [1:0] $end
-$var wire 8 L alu_out [7:0] $end
-$var wire 1 ? clk $end
-$var wire 8 M data_memory_out [7:0] $end
-$var wire 1 A ld_B $end
-$var wire 1 B ld_pc $end
-$var wire 1 D mem_write_sig $end
-$var wire 1 E pc_src $end
-$var wire 1 F pop_sig $end
-$var wire 1 G push_sig $end
-$var wire 8 N stack_out [7:0] $end
-$var wire 1 H stack_src $end
-$var wire 1 I tos_sig $end
-$var reg 8 O B_reg [7:0] $end
-$var reg 8 P alu_out_reg [7:0] $end
-$var reg 8 Q instruction [7:0] $end
-$var reg 8 R mdr [7:0] $end
-$var reg 5 S pc [4:0] $end
-$var reg 1 T z $end
+$scope module stack $end
+$var reg 8 = \data[8] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 8 > \data[9] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 8 ? \data[10] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$scope module cpu $end
+$scope module data_path $end
+$scope module stack $end
+$var reg 8 @ \data[11] [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module CPUTest $end
+$var reg 1 A clk $end
+$scope module cpu $end
+$var wire 2 B alu_op [1:0] $end
+$var wire 1 C clk $end
+$var wire 8 D inst [7:0] $end
+$var wire 1 E ld_B $end
+$var wire 1 F ld_IR $end
+$var wire 1 G ld_MDR $end
+$var wire 1 H ld_pc $end
+$var wire 1 I mem_adr_src $end
+$var wire 1 J mem_write_sig $end
+$var wire 1 K pc_src $end
+$var wire 1 L pop_sig $end
+$var wire 1 M push_sig $end
+$var wire 1 N stack_src $end
+$var wire 1 O tos_sig $end
+$var wire 1 P z $end
+$scope module data_path $end
+$var wire 2 Q alu_op [1:0] $end
+$var wire 8 R alu_out [7:0] $end
+$var wire 1 C clk $end
+$var wire 8 S data_memory_out [7:0] $end
+$var wire 1 E ld_B $end
+$var wire 1 F ld_IR $end
+$var wire 1 G ld_MDR $end
+$var wire 1 H ld_pc $end
+$var wire 1 I mem_adr_src $end
+$var wire 1 J mem_write_sig $end
+$var wire 1 K pc_src $end
+$var wire 1 L pop_sig $end
+$var wire 1 M push_sig $end
+$var wire 8 T stack_out [7:0] $end
+$var wire 1 N stack_src $end
+$var wire 1 O tos_sig $end
+$var reg 8 U B_reg [7:0] $end
+$var reg 8 V alu_out_reg [7:0] $end
+$var reg 8 W instruction [7:0] $end
+$var reg 8 X mdr [7:0] $end
+$var reg 5 Y pc [4:0] $end
+$var reg 1 Z z $end
 $scope module data_memory $end
-$var wire 5 U address [4:0] $end
-$var wire 1 ? clk $end
-$var wire 1 D mem_write_sig $end
-$var wire 8 V write_data [7:0] $end
-$var integer 32 W i [31:0] $end
-$var reg 8 X read_data [7:0] $end
+$var wire 5 [ address [4:0] $end
+$var wire 1 C clk $end
+$var wire 1 J mem_write_sig $end
+$var wire 8 \ write_data [7:0] $end
+$var integer 32 ] i [31:0] $end
+$var reg 8 ^ read_data [7:0] $end
 $scope begin loop $end
 $upscope $end
 $upscope $end
 $scope module stack $end
-$var wire 1 ? clk $end
-$var wire 1 F pop_sig $end
-$var wire 8 Y push_data [7:0] $end
-$var wire 1 G push_sig $end
-$var wire 1 I tos_sig $end
-$var integer 32 Z i [31:0] $end
-$var reg 8 [ out_data [7:0] $end
-$var reg 4 \ stack_pointer [3:0] $end
+$var wire 1 C clk $end
+$var wire 1 L pop_sig $end
+$var wire 8 _ push_data [7:0] $end
+$var wire 1 M push_sig $end
+$var wire 1 O tos_sig $end
+$var integer 32 ` i [31:0] $end
+$var reg 8 a out_data [7:0] $end
+$var reg 3 b stack_pointer [2:0] $end
 $scope begin loop2 $end
 $upscope $end
 $upscope $end
 $scope module alu $end
-$var wire 8 ] A [7:0] $end
-$var wire 8 ^ B [7:0] $end
-$var wire 2 _ alu_op [1:0] $end
-$var reg 8 ` R [7:0] $end
+$var wire 8 c A [7:0] $end
+$var wire 8 d B [7:0] $end
+$var wire 2 e alu_op [1:0] $end
+$var reg 8 f R [7:0] $end
 $upscope $end
 $upscope $end
 $scope module controller $end
-$var wire 1 ? clk $end
-$var wire 8 a inst [7:0] $end
-$var wire 1 J zero $end
-$var reg 2 b alu_op [1:0] $end
-$var reg 1 c ld_B $end
-$var reg 1 d ld_pc $end
-$var reg 1 e mem_adr_src $end
-$var reg 1 f mem_write $end
-$var reg 4 g ns [3:0] $end
-$var reg 1 h pc_src $end
-$var reg 4 i ps [3:0] $end
-$var reg 1 j stack_pop $end
-$var reg 1 k stack_push $end
-$var reg 1 l stack_src $end
-$var reg 1 m tos $end
+$var wire 1 C clk $end
+$var wire 8 g inst [7:0] $end
+$var wire 1 P zero $end
+$var reg 2 h alu_op [1:0] $end
+$var reg 1 i ld_B $end
+$var reg 1 j ld_IR $end
+$var reg 1 k ld_MDR $end
+$var reg 1 l ld_pc $end
+$var reg 1 m mem_adr_src $end
+$var reg 1 n mem_write $end
+$var reg 4 o ns [3:0] $end
+$var reg 1 p pc_src $end
+$var reg 4 q ps [3:0] $end
+$var reg 1 r stack_pop $end
+$var reg 1 s stack_push $end
+$var reg 1 t stack_src $end
+$var reg 1 u tos $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+0u
+0t
+0s
+0r
+b1111 q
+0p
+b0 o
+0n
 0m
 0l
 0k
 0j
-b0 i
-0h
-b1 g
-0f
-1e
-1d
-0c
+0i
+b0 h
+bx g
+bx f
+b0 e
+bx d
+bx c
 b0 b
-b10001111 a
-bx `
-b0 _
+bx a
+b1100 `
+bx _
 bx ^
-bx ]
-b0 \
+b10100 ]
+bx \
 bx [
-b1000 Z
-b10001111 Y
-b10001111 X
-b10100 W
+xZ
+b0 Y
+bx X
+bx W
 bx V
-b0 U
-xT
-b0 S
-b10001111 R
-b10001111 Q
-bx P
-bx O
-bx N
-b10001111 M
-bx L
-b0 K
-xJ
+bx U
+bx T
+bx S
+bx R
+b0 Q
+xP
+0O
+0N
+0M
+0L
+0K
+0J
 0I
 0H
 0G
 0F
 0E
-0D
-1C
-1B
+bx D
+0C
+b0 B
 0A
-b10001111 @
-1?
-b0 >
-1=
+bx @
+bx ?
+bx >
+bx =
 bx <
 bx ;
 bx :
@@ -405,9 +456,9 @@ bx 6
 bx 5
 bx 4
 bx 3
-bx 2
-bx 1
-bx 0
+b10 2
+b1 1
+b10101010 0
 bx /
 bx .
 bx -
@@ -425,316 +476,472 @@ b10010000 "
 b10001111 !
 $end
 #20
-0=
-0?
-#40
-b101 g
-0e
-0C
-0d
-0B
-b10010000 X
-b10010000 M
-b1 i
-b1 S
-b1 U
-1=
-1?
-#60
-0=
-0?
-#80
-b110 g
-b10010000 Y
-b10010000 Q
-b10010000 @
-b10010000 a
-b10010000 R
-b101 i
-1=
-1?
-#100
-0=
-0?
-#120
-b1 \
-b0xxxxxxxx 5
-bx Y
+b10001111 ^
+b10001111 S
+b0 [
 1l
 1H
-1k
-1G
-b0 g
-b110 i
-1=
-1?
-#140
-0=
-0?
-#160
-b10010000 Y
-1d
-1B
-1e
-1C
-b1 g
-0k
-0G
-0l
-0H
-b0 i
-b10 \
-b0xxxxxxxx 6
-1=
-1?
-#180
-0=
-0?
-#200
-b101 g
-0e
-0C
-0d
-0B
-b10010001 X
-b10010001 M
-b1 i
-b10 S
-b10 U
-1=
-1?
-#220
-0=
-0?
-#240
-b110 g
-b10010001 Y
-b10010001 Q
-b10010001 @
-b10010001 a
-b10010001 R
-b101 i
-1=
-1?
-#260
-0=
-0?
-#280
-b11 \
-b0xxxxxxxx 7
-bx Y
-1l
-1H
-1k
-1G
-b0 g
-b110 i
-1=
-1?
-#300
-0=
-0?
-#320
-b10010001 Y
-1d
-1B
-1e
-1C
-b1 g
-0k
-0G
-0l
-0H
-b0 i
-b100 \
-b0xxxxxxxx 8
-1=
-1?
-#340
-0=
-0?
-#360
-b101 g
-0e
-0C
-0d
-0B
-b0 X
-b0 M
-b1 i
-b11 S
-b11 U
-1=
-1?
-#380
-0=
-0?
-#400
-b110 g
-b0 Y
-b0 Q
-b0 @
-b0 a
-b0 R
-b101 i
-1=
-1?
-#420
-0=
-0?
-#440
-b101 \
-b0xxxxxxxx 9
-bx Y
-1l
-1H
-1k
-1G
-b0 g
-b110 i
-1=
-1?
-#460
-0=
-0?
-#480
-b0 Y
-1d
-1B
-1e
-1C
-b1 g
-0k
-0G
-0l
-0H
-b0 i
-b110 \
-b0xxxxxxxx :
-1=
-1?
-#500
-0=
-0?
-#520
-b10 g
-0e
-0C
-0d
-0B
-b1 i
-b100 S
-b100 U
-1=
-1?
-#540
-0=
-0?
-#560
-b101 \
-1c
+1j
+1F
+1m
+1I
+b1 o
+b0 q
 1A
-1j
-1F
-1m
-1I
-b11 g
-b10 i
-1=
-1?
-#580
-0=
-0?
-#600
-b100 g
-0c
+1C
+#40
 0A
-1j
-1F
-1m
-1I
-b11 i
-b11 \
-1=
-1?
-#620
-0=
-0?
-#640
-b0xxxxxxxx 7
-bx Y
+0C
+#60
 1k
 1G
-1l
-1H
-b0 g
+b101 o
 0j
 0F
 0m
 0I
-b100 i
-b11 \
-1=
-1?
-#660
-0=
-0?
-#680
-b0 Y
-1d
-1B
-1e
-1C
-b1 g
-0k
-0G
 0l
 0H
-b0 i
-b100 \
-b0xxxxxxxx 8
-1=
-1?
-#700
-0=
-0?
-#720
-b10 g
-0e
-0C
-0d
-0B
-b11111111 X
-b11111111 M
-b101 S
-b101 U
-b1 i
-1=
-1?
-#740
-0=
-0?
-#760
-b11 \
-1c
+b10101010 ^
+b10101010 S
+b1111 [
+b1 q
+b10001111 W
+b10001111 D
+b10001111 g
+b1 Y
 1A
+1C
+#80
+0A
+0C
+#100
+1s
+1M
+b110 o
+0k
+0G
+b10101010 _
+b10101010 X
+b101 q
+1A
+1C
+#120
+0A
+0C
+#140
+b0 o
+0s
+0M
+b110 q
+0Z
+0P
+b10101010 a
+b10101010 T
+b10101010 \
+b10101010 d
+b1 b
+b10101010 5
+1A
+1C
+#160
+0A
+0C
+#180
+b10010000 ^
+b10010000 S
+b1 [
+1l
+1H
 1j
 1F
 1m
 1I
-b11 g
-b11111111 Y
-b10 i
-b11111111 Q
-b11111111 @
-b11111111 a
-b11111111 R
-1=
-1?
-#780
-0=
-0?
-#800
+b1 o
+b0 q
+1A
+1C
+#200
+0A
+0C
+#220
+1k
+1G
+b101 o
+0j
+0F
+0m
+0I
+0l
+0H
+b1 ^
+b1 S
+b10000 [
+b1 q
+b10010000 W
+b10010000 D
+b10010000 g
+b10 Y
+1A
+1C
+#240
+0A
+0C
+#260
+1s
+1M
+b110 o
+0k
+0G
+b1 _
+b1 X
+b101 q
+1A
+1C
+#280
+0A
+0C
+#300
+b0 o
+0s
+0M
+b110 q
+b1 a
+b1 T
+b1 \
+b1 d
+b10 b
+b1 6
+1A
+1C
+#320
+0A
+0C
+#340
+b10010001 ^
+b10010001 S
+b10 [
+1l
+1H
+1j
+1F
+1m
+1I
+b1 o
+b0 q
+1A
+1C
+#360
+0A
+0C
+#380
+1k
+1G
+b101 o
+0j
+0F
+0m
+0I
+0l
+0H
+b10 ^
+b10 S
+b10001 [
+b1 q
+b10010001 W
+b10010001 D
+b10010001 g
+b11 Y
+1A
+1C
+#400
+0A
+0C
+#420
+1s
+1M
+b110 o
+0k
+0G
+b10 _
+b10 X
+b101 q
+1A
+1C
+#440
+0A
+0C
+#460
+b0 o
+0s
+0M
+b110 q
+b10 a
+b10 T
 b10 \
-1=
-1?
+b10 d
+b11 b
+b10 7
+1A
+1C
+#480
+0A
+0C
+#500
+b0 ^
+b0 S
+b11 [
+1l
+1H
+1j
+1F
+1m
+1I
+b1 o
+b0 q
+1A
+1C
+#520
+0A
+0C
+#540
+b10001111 ^
+b10001111 S
+1i
+1E
+1r
+1L
+b10 o
+0j
+0F
+0m
+0I
+0l
+0H
+b0 [
+b1 q
+b0 W
+b0 D
+b0 g
+b100 Y
+1A
+1C
+#560
+0A
+0C
+#580
+1u
+1O
+b11 o
+0i
+0E
+1r
+1L
+b100 f
+b100 R
+b10 U
+b10 c
+b10 q
+b10 b
+1A
+1C
+#600
+0A
+0C
+#620
+b11 _
+1t
+1N
+1s
+1M
+b0 o
+0r
+0L
+1u
+1O
+b11 q
+b100 V
+b11 f
+b11 R
+b1 b
+b1 a
+b1 T
+b1 \
+b1 d
+1A
+1C
+#640
+0A
+0C
+#660
+b0 ^
+b0 S
+b100 [
+1l
+1H
+1j
+1F
+1m
+1I
+b1 o
+0s
+0M
+0u
+0O
+0t
+0N
+b11 V
+b0 q
+b10 _
+b10101100 f
+b10101100 R
+b10 b
+b11 6
+b10101010 a
+b10101010 T
+b10101010 \
+b10101010 d
+1A
+1C
+#680
+0A
+0C
+#700
+1i
+1E
+1r
+1L
+b10 o
+0j
+0F
+0m
+0I
+0l
+0H
+b10001111 ^
+b10001111 S
+b0 [
+b1 q
+b10101100 V
+b101 Y
+b101 f
+b101 R
+b11 a
+b11 T
+b11 \
+b11 d
+1A
+1C
+#720
+0A
+0C
+#740
+1u
+1O
+b11 o
+0i
+0E
+1r
+1L
+b110 f
+b110 R
+b101 V
+b11 U
+b11 c
+b10 q
+b1 b
+1A
+1C
+#760
+0A
+0C
+#780
+b10101101 _
+1t
+1N
+1s
+1M
+b0 o
+0r
+0L
+1u
+1O
+b11 q
+b110 V
+b10101101 f
+b10101101 R
+b0 b
+b10101010 a
+b10101010 T
+b10101010 \
+b10101010 d
+1A
+1C
+#800
+0A
+0C
+#820
+b11111111 ^
+b11111111 S
+b101 [
+1l
+1H
+1j
+1F
+1m
+1I
+b1 o
+0s
+0M
+0u
+0O
+0t
+0N
+b10101101 V
+b0 q
+b10 _
+bx f
+bx R
+b1 b
+b10101101 5
+bx a
+bx T
+bx \
+bx d
+1A
+1C
+#840
+0A
+0C
+#860
+b1010 o
+0j
+0F
+0m
+0I
+0l
+0H
+bx ^
+bx S
+b11111 [
+b1 q
+bx V
+b11111111 W
+b11111111 D
+b11111111 g
+b110 Y
+b10110000 f
+b10110000 R
+b10101101 a
+b10101101 T
+b10101101 \
+b10101101 d
+1A
+1C
+#880
+0A
+0C
+#900
+b10110000 V
+1A
+1C
