@@ -70,7 +70,7 @@ module Controller(input [7:0] inst, input clk, zero, output reg pc_src, ld_pc, l
       and_sub_add_2: begin
         //ns <= and_sub_add_3;
         ns <= inst_fetch;
-        alu_op <= inst[7:6];
+        alu_op <= inst[6:5];
         tos <= 1;
         //stack_pop <= 1;
         //new:
@@ -108,14 +108,19 @@ module Controller(input [7:0] inst, input clk, zero, output reg pc_src, ld_pc, l
         pc_src <= 1;
       end
       jz_1: begin 
-        ns <= zero ? jz_2 : inst_fetch;
+        //ns <= zero ? jz_2 : inst_fetch;
+        ns <= inst_fetch;
         tos <= 1;
+        if(zero) begin
+          ld_pc <= 1;
+          pc_src <= 1;
+        end
       end
-      jz_2: begin 
+/*      jz_2: begin 
         ns <= inst_fetch;
         ld_pc <= 1;
         pc_src <= 1;
-      end        
+      end       */
     endcase
   end
   

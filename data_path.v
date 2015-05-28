@@ -19,7 +19,7 @@ module DataPath(input clk, ld_pc, ld_B, ld_IR, ld_MDR, stack_src, mem_write_sig,
     if(ld_B) B_reg <= stack_out;
     if(ld_MDR) mdr <= data_memory_out;
     if (ld_IR == 1'b1) instruction <= data_memory_out;
-    z <= (stack_out == 0);
+    z <= (stack_out == 8'b00000000);
     alu_out_reg <= alu_out;    
   end
 
